@@ -107,12 +107,12 @@ Edit
 <!-- android/app/src/main/AndroidManifest.xml -->
 <meta-data
     android:name="com.google.android.geo.API_KEY"
-    android:value="YOUR_API_KEY"/>
+    android:value=""/>
 swift
 Copy
 Edit
 // ios/Runner/AppDelegate.swift
-GMSServices.provideAPIKey("YOUR_API_KEY")
+GMSServices.provideAPIKey()
 5. ▶️ Run the App
 bash
 Copy
