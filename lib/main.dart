@@ -12,12 +12,10 @@ void main() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(
     EasyLocalization(
-      
-      supportedLocales: [Locale('fa'), Locale('en'), Locale('ar'),],
+      supportedLocales: [Locale('fa'), Locale('en'), Locale('ar')],
       path: 'assets/translations',
       startLocale: Locale('fa'),
       child: const ShoppingApp(),
-      
     ),
   );
 }
@@ -37,11 +35,6 @@ class ShoppingApp extends StatelessWidget {
         // You can change this dynamically based on user preference
         supportedLocales: context.supportedLocales,
         localizationsDelegates: context.localizationDelegates,
-       
-
-         
-        
-
         home: safeMatrialapp(),
       ),
     );
